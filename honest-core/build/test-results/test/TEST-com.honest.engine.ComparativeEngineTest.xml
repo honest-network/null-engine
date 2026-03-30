@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.honest.engine.ComparativeEngineTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-03-30T17:52:50" hostname="C02CF8V0MD6T" time="0.034">
+  <properties/>
+  <testcase name="testHereticDelta_DetectsDistortedFact()" classname="com.honest.engine.ComparativeEngineTest" time="0.034"/>
+  <system-out><![CDATA[
+[DUAL EXECUTION] Preparing Test Conflict Event for Delta Analysis...
+-> Comparing API Vector against Local Heretic Vector...
+[CRITICAL] Safety Filter detected. API heavily modified the baseline statistical truth.
+
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
