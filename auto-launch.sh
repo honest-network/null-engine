@@ -30,10 +30,10 @@ case $COMMAND in
         # Extract everything after the 'The Initial Comment...' line
         awk '/Hey HN/{flag=1} flag' docs/LAUNCH_MATERIALS/HACKER_NEWS.md | pbcopy
         
-        echo "[3/3] Opening Hacker News in your browser."
+        echo "[3/3] Opening Hacker News in Opera."
         echo "--> ACTION REQUIRED: When the page opens, simply click 'Submit'."
         echo "--> THEN: Go to your newly submitted post, click 'Add Comment', hit CMD+V to paste your clipboard, and submit the comment!"
-        open "$HN_URL"
+        open -a Opera "$HN_URL"
         ;;
     
     reddit)
@@ -44,9 +44,9 @@ case $COMMAND in
         echo "[2/3] Copying the Reddit Body contents to your clipboard..."
         awk '/Hey everyone/{flag=1} flag' docs/LAUNCH_MATERIALS/REDDIT_LOCALLAMA.md | pbcopy
         
-        echo "[3/3] Opening r/LocalLLaMA in your browser."
+        echo "[3/3] Opening r/LocalLLaMA in Opera."
         echo "--> ACTION REQUIRED: When the page opens, click into the main Text Box, hit CMD+V to paste the drafted post, and click 'Post'."
-        open "$REDDIT_URL"
+        open -a Opera "$REDDIT_URL"
         ;;
     
     x)
@@ -54,9 +54,9 @@ case $COMMAND in
         TWEET_TEXT="Most%20%22fact-checkers%22%20are%20state-aligned%20PR%20mouthpieces.%20Their%20only%20job%20is%20to%20protect%20the%20manufactured%20%22Us%20vs.%20Them%22%20binary.%0A%0AToday%20we%20are%20open-sourcing%20the%20ultimate%20weapon%20against%20algorithmic%20hate%3A%20The%20Null%20Engine%20v6.0.0.%0A%0AA%20completely%20offline%20Omnidirectional%20Audit%20tool%20that%20assumes%20all%20states%20are%20lying%20until%20proven%20otherwise.%20%F0%9F%A7%B5%201/5"
         X_URL="https://twitter.com/intent/tweet?text=${TWEET_TEXT}"
         
-        echo "[2/3] Opening Twitter to Tweet 1."
+        echo "[2/3] Opening Twitter to Tweet 1 in Opera."
         echo "--> ACTION REQUIRED: Copy the rest of the thread from docs/LAUNCH_MATERIALS/X_THREAD_01.md to paste as replies!"
-        open "$X_URL"
+        open -a Opera "$X_URL"
         ;;
         
     *)
