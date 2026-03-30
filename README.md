@@ -1,5 +1,5 @@
 <div align="center">
-  <h1>The Null Engine (v6.0.0)</h1>
+  <h1>The Null Engine</h1>
   <p><i>A Cryptographic Polygraph for Artificial Intelligence</i></p>
 </div>
 
