@@ -38,7 +38,7 @@ case $COMMAND in
     
     reddit)
         echo "[1/3] Preloading r/LocalLLaMA Subreddit URL Intent..."
-        TITLE="I%20built%20a%201-click%20script%20that%20uses%20local%20Dolphin-Llama3%20to%20mathematically%20expose%20state%20propaganda.%20It%20ignores%20all%20corporate%20safety%20filters."
+        TITLE="Technical%20implementation%20of%20a%20local%20Llama3%20pipeline%20for%20multi-vector%20propaganda%20auditing%20%28bypassing%20corporate%20API%20filters%29"
         REDDIT_URL="https://www.reddit.com/r/LocalLLaMA/submit?title=${TITLE}"
         
         echo "[2/3] Copying the Reddit Body contents to your clipboard..."
@@ -51,7 +51,7 @@ case $COMMAND in
     
     x)
         echo "[1/3] Preloading Twitter Intent API..."
-        TWEET_TEXT="Most%20%22fact-checkers%22%20are%20state-aligned%20PR%20mouthpieces.%20Their%20only%20job%20is%20to%20protect%20the%20manufactured%20%22Us%20vs.%20Them%22%20binary.%0A%0AToday%20we%20are%20open-sourcing%20the%20ultimate%20weapon%20against%20algorithmic%20hate%3A%20The%20Null%20Engine%20v6.0.0.%0A%0AA%20completely%20offline%20Omnidirectional%20Audit%20tool%20that%20assumes%20all%20states%20are%20lying%20until%20proven%20otherwise.%20%F0%9F%A7%B5%201/5"
+        TWEET_TEXT="Most%20%22fact-checkers%22%20are%20state%20PR%20mouthpieces%20protecting%20the%20%22Us%20vs.%20Them%22%20binary.%0A%0AToday%20we%20open-source%20a%20weapon%20against%20algorithmic%20hate%3A%20The%20Null%20Engine%20v6.0.0.%0A%0AAn%20offline%20Omnidirectional%20Audit%20tool%20assuming%20all%20states%20lie.%20%F0%9F%A7%B5%201%2F5"
         X_URL="https://twitter.com/intent/tweet?text=${TWEET_TEXT}"
         
         echo "[2/3] Opening Twitter to Tweet 1 in Opera."
